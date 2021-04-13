@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.js": "/personal-website/static/js/main.57e178a4.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.57e178a4.chunk.js.map",
+    "main.js": "/personal-website/static/js/main.a18775fa.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.a18775fa.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.8716f452.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.8716f452.js.map",
     "static/js/2.0ac4c0c0.chunk.js": "/personal-website/static/js/2.0ac4c0c0.chunk.js",
     "static/js/2.0ac4c0c0.chunk.js.map": "/personal-website/static/js/2.0ac4c0c0.chunk.js.map",
     "index.html": "/personal-website/index.html",
     "static/js/2.0ac4c0c0.chunk.js.LICENSE.txt": "/personal-website/static/js/2.0ac4c0c0.chunk.js.LICENSE.txt",
+    "static/media/BrewersDiary.8c2144d2.png": "/personal-website/static/media/BrewersDiary.8c2144d2.png",
     "static/media/calculator.6021e0d6.png": "/personal-website/static/media/calculator.6021e0d6.png",
     "static/media/kinlochleven1.4cd27a2f.jpg": "/personal-website/static/media/kinlochleven1.4cd27a2f.jpg",
     "static/media/lartsy.87a2ff4e.png": "/personal-website/static/media/lartsy.87a2ff4e.png",
@@ -18,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.8716f452.js",
     "static/js/2.0ac4c0c0.chunk.js",
-    "static/js/main.57e178a4.chunk.js"
+    "static/js/main.a18775fa.chunk.js"
   ]
 }
