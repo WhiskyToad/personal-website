@@ -38,6 +38,19 @@ const About = () => {
           general outline of what needs done and then organise myself to
           complete the tasks. Have experience of working in small teams as well
           as lone work.
+          <br></br>
+          <br></br>
+          My learning journey began in November 2019 when I completed a basic
+          codeacademy Python course before purchasing Automate the Boring Stuff
+          and coding along with that. From here I switched across to JavaScript
+          for more career opportunities. I really enjoy the challenge of full
+          stack development, I like being a jack of all trades and being self
+          reliant in fixing and creating everything as much as possible. It was
+          near the start of my web development course that I discovered that I
+          REALLY enjoy software development, my mind has always been a very
+          active monkey brain and the problems and challenges imposed by
+          programming and the logical way of thinking just clicked with me and I
+          finally feel I have found a hobby I can turn into a career.
         </Text>
       </Box>
       <Box py="2%" w="100%" bgColor="white">
@@ -75,11 +88,10 @@ const About = () => {
           borderBottom="1px solid white"
           fontFamily="open-sans"
         >
-          Full stack JavaScript course. Having completed Automate the Boring
-          Stuff with Python I moved over to JS. This took me from knowing not
-          much about Web Development to being confident in my abilities to
-          complete most tasks and develop my own ideas into workable projects,
-          teaching me various frameworks and technology along the way.
+          Full stack JavaScript course. This took me from knowing not much about
+          Web Development to being confident in my abilities to complete most
+          tasks and develop my own ideas into workable projects, teaching me
+          various frameworks and technologies along the way.
         </Text>
         <Text fontSize={["20px", "20px", "30px", "30px"]} pt="20px">
           Civil Engineering | Heriot-Watt Uni | 09-10
@@ -158,7 +170,7 @@ const About = () => {
           pb="40px"
           borderBottom="1px solid white"
         >
-          JavaScript | react + redux | HTML5 | CSS3 | NodeJS | MongoDB | GitHub
+          JavaScript | React + Redux | HTML5 | CSS3 | NodeJS | MongoDB | GitHub
           | Management Skills | Instructor | Highly Teachable
         </Text>
       </Box>

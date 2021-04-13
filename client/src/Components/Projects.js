@@ -21,12 +21,12 @@ const Projects = () => {
           m="20px"
         >
           <Image src={BrewersDiary} alt="Brewers Diary cover" />
-          <Box>
+          <Box p="10px">
             <Text fontSize="30px">Brewers Diary</Text>
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -35,7 +35,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -44,7 +44,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -53,7 +53,8 @@ const Projects = () => {
             <Text mb="10px" fontSize="15px" fontFamily="open-sans">
               My long term project to create a recipe and brew log sharing
               website, I'm slowly building this out and adding more features,
-              currently it is fully working for CRUD operations.
+              currently it is fully working for CRUD operations. One day I aim
+              to bring this to full production.
             </Text>
             <Link
               href="https://github.com/WhiskyToad/brewers-diary"
@@ -82,7 +83,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -91,7 +92,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -133,7 +134,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -176,7 +177,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
@@ -218,7 +219,7 @@ const Projects = () => {
             <Badge
               variant="solid"
               rounded="full"
-              fontSize="20px"
+              fontSize="15px"
               px={3}
               m="2px"
             >
