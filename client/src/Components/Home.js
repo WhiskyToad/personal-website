@@ -11,7 +11,6 @@ import {
 
 import About from "./About";
 import Projects from "./Projects";
-import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -37,7 +36,6 @@ const Home = () => {
         <TabList>
           <Tab fontSize={["25px", "25px", "40px", "40px"]}>About</Tab>
           <Tab fontSize={["25px", "25px", "40px", "40px"]}>Projects</Tab>
-          <Tab fontSize={["25px", "25px", "40px", "40px"]}>Contact</Tab>
         </TabList>
 
         <TabPanels bg="white" color="black">
@@ -46,9 +44,6 @@ const Home = () => {
           </TabPanel>
           <TabPanel>
             <Projects />
-          </TabPanel>
-          <TabPanel>
-            <Contact />
           </TabPanel>
         </TabPanels>
       </Tabs>

@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import theme from "./theme/theme";
@@ -12,12 +12,12 @@ const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Fonts />
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/home" component={Home} />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </ChakraProvider>
   );
 };

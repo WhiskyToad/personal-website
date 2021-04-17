@@ -30,7 +30,7 @@ const Landing = () => {
           >
             Steven Craig
           </Text>
-          <a href="#home">
+          <a href="/home">
             <Button
               fontFamily="BebasNeue"
               colorScheme="teal"
