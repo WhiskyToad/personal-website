@@ -5,10 +5,10 @@ const theme = extendTheme({
     body: "Open Sans",
   },
   textStyles: {
-    navbar: {
+    heading: {
       fontFamily: ["BebasNeue"],
       fontSize: ["28px", "38px", "38px", "52px"],
-      color: "yellow",
+      color: "teal",
     },
   },
 });
