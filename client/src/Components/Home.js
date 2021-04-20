@@ -1,53 +1,65 @@
-import React from "react";
-import {
-  Text,
-  Box,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-} from "@chakra-ui/react";
+import React, { useState, useRef, useEffect } from "react";
+import { Text, HStack, Image, Box, VStack } from "@chakra-ui/react";
 
+import Links from "./Links";
 import About from "./About";
 import Projects from "./Projects";
+import Landing from "./Landing";
+
+import "./styles.css";
 
 const Home = () => {
+  const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
+  const headerRef = useRef(null);
+
+  // handle scroll event
+  const handleScroll = (elTopOffset, elHeight) => {
+    if (window.pageYOffset > elTopOffset + elHeight) {
+      setSticky({ isSticky: true, offset: elHeight });
+    } else {
+      setSticky({ isSticky: false, offset: 0 });
+    }
+  };
+
+  // add/remove scroll event listener
+  useEffect(() => {
+    let header = headerRef.current.getBoundingClientRect();
+    const handleScrollEvent = () => {
+      handleScroll(header.top, header.height);
+    };
+
+    window.addEventListener("scroll", handleScrollEvent);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollEvent);
+    };
+  }, []);
+
   return (
-    <>
-      <Box w="100%" textAlign="center" background="black" color="white">
+    <div style={{ marginTop: sticky.offset }}>
+      <Landing />
+      <HStack
+        w="50%"
+        bg="#222222"
+        mx="auto"
+        borderRadius="60px"
+        className={`navbar${sticky.isSticky ? " sticky" : ""}`}
+        ref={headerRef}
+      >
+        <Links />
         <Text
-          fontFamily="Neoneon"
-          fontSize={["60px", "60px", "80px", "80px"]}
-          pt="10px"
-          color="teal"
+          fontFamily="Karantina"
+          fontSize={["50px", "50px", "60px", "60px"]}
+          color="white"
         >
           Steven Craig
         </Text>
-      </Box>
-      <Tabs
-        size="lg"
-        bg="black"
-        color="white"
-        align="center"
-        colorScheme="teal"
-        fontFamily="BebasNeue"
-      >
-        <TabList>
-          <Tab fontSize={["25px", "25px", "40px", "40px"]}>About</Tab>
-          <Tab fontSize={["25px", "25px", "40px", "40px"]}>Projects</Tab>
-        </TabList>
+      </HStack>
 
-        <TabPanels bg="white" color="black">
-          <TabPanel>
-            <About />
-          </TabPanel>
-          <TabPanel>
-            <Projects />
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-    </>
+      <About />
+
+      <Projects />
+    </div>
   );
 };
 

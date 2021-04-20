@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Box, Text, HStack } from "@chakra-ui/react";
+
+import { BsChevronDoubleDown } from "react-icons/bs";
 
 import background from "./Images/kinlochleven1.jpg";
 
@@ -7,7 +9,7 @@ const Landing = () => {
   return (
     <>
       <Box
-        minH="100vh"
+        h="100vh"
         backgroundImage={`url(${background})`}
         backgroundPosition={[
           "left center",
@@ -18,29 +20,24 @@ const Landing = () => {
         backgroundRepeat="no-repeat"
         bgSize="cover"
       >
-        <Box mx="auto" pt="5%" textAlign="center">
+        <HStack
+          w="40%"
+          bg="#222222"
+          mx="auto"
+          borderRadius="60px"
+          color="white"
+          fontSize="30px"
+          justify="space-evenly"
+        >
+          <BsChevronDoubleDown className="bounce" />
           <Text
-            fontFamily={[
-              "BebasNeue",
-              "BebasNeue",
-              "DigitalOrange",
-              "DigitalOrange",
-            ]}
-            fontSize={["50px", "50px", "100px", "100px"]}
+            fontFamily="Karantina"
+            fontSize={["50px", "50px", "60px", "50px"]}
           >
             Steven Craig
           </Text>
-          <a href="/home">
-            <Button
-              fontFamily="BebasNeue"
-              colorScheme="teal"
-              size="lg"
-              fontSize="30px"
-            >
-              I'm intrigued!
-            </Button>
-          </a>
-        </Box>
+          <BsChevronDoubleDown className="bounce" />
+        </HStack>
       </Box>
     </>
   );

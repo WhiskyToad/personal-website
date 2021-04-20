@@ -6,7 +6,6 @@ import theme from "./theme/theme";
 import Fonts from "./theme/font-face";
 
 import Home from "./Components/Home";
-import Landing from "./Components/Landing";
 
 const App = () => {
   return (
@@ -14,8 +13,7 @@ const App = () => {
       <Fonts />
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </BrowserRouter>
     </ChakraProvider>

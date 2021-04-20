@@ -5,9 +5,9 @@ const theme = extendTheme({
     body: "Open Sans",
   },
   textStyles: {
-    heading: {
+    landing: {
       fontFamily: ["BebasNeue"],
-      fontSize: ["28px", "38px", "38px", "52px"],
+      fontSize: ["28px", "38px", "38px", "63px"],
       color: "teal",
     },
   },

@@ -2,12 +2,10 @@ import React from "react";
 import { Box, Image, Text, HStack, Tooltip } from "@chakra-ui/react";
 
 import headshot from "./Images/profilephoto.jpeg";
-import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-
 const About = () => {
   return (
     <>
-      <Box my="2%">
+      <Box my="2%" textAlign="center">
         <Image
           src={headshot}
           borderRadius="full"
@@ -24,23 +22,6 @@ const About = () => {
         >
           Driven | Hard-Working | Dynamic
         </Text>
-        <HStack justify="center" align="baseline" fontSize="3rem" spacing={7}>
-          <Tooltip hasArrow label="Linkedin profile" bg="teal" placement="top">
-            <a href="https://www.linkedin.com/in/steven-craig-082717203/">
-              <AiFillLinkedin />
-            </a>
-          </Tooltip>
-          <Tooltip hasArrow label="Github link" bg="teal" placement="top">
-            <a href="https://github.com/WhiskyToad">
-              <AiFillGithub />
-            </a>
-          </Tooltip>
-          <Tooltip hasArrow label="Email me" bg="teal" placement="top">
-            <a href="mailto:stevencraig321@gmail.com">
-              <AiOutlineMail />
-            </a>
-          </Tooltip>
-        </HStack>
       </Box>
       <Box py="2%" w="100%" bgColor="teal" color="white">
         <Text fontSize={["30px", "30px", "50px", "50px"]}>About Me</Text>
