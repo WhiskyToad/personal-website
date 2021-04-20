@@ -5,7 +5,7 @@ import { education } from "./Data/education";
 
 const Education = () => {
   return (
-    <VStack w="100%" bg="#fffbee">
+    <VStack w="100%">
       <Text textStyle="heading">Education</Text>
 
       {education.map((course, index) => (

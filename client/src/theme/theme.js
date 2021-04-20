@@ -10,10 +10,16 @@ const theme = extendTheme({
     },
   },
   textStyles: {
+    navBarTitle: {
+      fontFamily: ["BebasNeue"],
+      fontSize: ["28px", "38px", "38px", "54px"],
+      color: "#daad86",
+    },
     heading: {
       fontFamily: ["BebasNeue"],
       fontSize: ["28px", "38px", "38px", "54px"],
-      color: "teal",
+
+      color: "#659dbd",
     },
     subHeading: {
       fontFamily: ["BebasNeue"],

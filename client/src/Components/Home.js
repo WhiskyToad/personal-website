@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Text, HStack } from "@chakra-ui/react";
+import { Text, HStack, Tooltip } from "@chakra-ui/react";
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-import Links from "./Links";
 import About from "./About";
 import Work from "./Work";
 import Education from "./Education";
@@ -42,21 +42,17 @@ const Home = () => {
     <div style={{ marginTop: sticky.offset }}>
       <Landing />
       <HStack
-        w="50%"
+        maxW="700px"
         bg="#222222"
         mx="auto"
         borderRadius="60px"
+        justify="space-evenly"
         className={`navbar${sticky.isSticky ? " sticky" : ""}`}
         ref={headerRef}
       >
         <Links />
-        <Text
-          fontFamily="Karantina"
-          fontSize={["50px", "50px", "60px", "60px"]}
-          color="white"
-        >
-          Steven Craig
-        </Text>
+        <Text textStyle="navBarTitle">Steven Craig</Text>
+        <Links />
       </HStack>
 
       <About />
@@ -65,6 +61,36 @@ const Home = () => {
       <Projects />
       <Skills />
     </div>
+  );
+};
+
+const Links = () => {
+  return (
+    <>
+      <HStack
+        color="white"
+        justify="center"
+        align="baseline"
+        fontSize="40px"
+        spacing={4}
+      >
+        <Tooltip hasArrow label="Linkedin profile" bg="teal" placement="top">
+          <a href="https://www.linkedin.com/in/steven-craig-082717203/">
+            <AiFillLinkedin />
+          </a>
+        </Tooltip>
+        <Tooltip hasArrow label="Github link" bg="teal" placement="top">
+          <a href="https://github.com/WhiskyToad">
+            <AiFillGithub />
+          </a>
+        </Tooltip>
+        <Tooltip hasArrow label="Email me" bg="teal" placement="top">
+          <a href="mailto:stevencraig321@gmail.com">
+            <AiOutlineMail />
+          </a>
+        </Tooltip>
+      </HStack>
+    </>
   );
 };
 
