@@ -3,7 +3,10 @@ import { Text, HStack, Image, Box, VStack } from "@chakra-ui/react";
 
 import Links from "./Links";
 import About from "./About";
+import Work from "./Work";
+import Education from "./Education";
 import Projects from "./Projects";
+import Skills from "./Skills";
 import Landing from "./Landing";
 
 import "./styles.css";
@@ -57,8 +60,10 @@ const Home = () => {
       </HStack>
 
       <About />
-
+      <Work />
+      <Education />
       <Projects />
+      <Skills />
     </div>
   );
 };
