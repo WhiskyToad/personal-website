@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Text, HStack, Image, Box, VStack } from "@chakra-ui/react";
+import { Text, HStack } from "@chakra-ui/react";
 
 import Links from "./Links";
 import About from "./About";

@@ -6,17 +6,21 @@ const Work = () => {
   return (
     <VStack py="2%" w="100%" bgColor="white">
       <Text textStyle="heading">Work History</Text>
-
-      <Text py="10px" textStyle="subHeading">
-        Ian Craig Haulage | Various Roles | 2008-Present
-      </Text>
-
-      <Text maxW="950px" mx="5px">
-        From part time mechanic whilst still in school to transport manager,
-        I've done it all. My current duties are as an instructor, compliance
-        manager and HGV driver. In the time I've been there the company has
-        grown over 50% in size to just under 100 employees.
-      </Text>
+      <HStack w="600px" justify="space-between">
+        <VStack textStyle="subHeading" spacing={4}>
+          <Text>Ian Craig Haulage</Text>
+          <Text>2008-Present</Text>
+        </VStack>
+        <VStack>
+          <Text textStyle="subHeading">Various Roles</Text>
+          <Text maxW="400px" mx="5px">
+            I started as a part time mechanic whilst in college. Moved into
+            driving and worked my way through learning every type of equipment
+            available. Have worked in the office in various roles and also as a
+            crane instructor with some other compliance based roles.
+          </Text>
+        </VStack>
+      </HStack>
     </VStack>
   );
 };

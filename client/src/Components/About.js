@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Text, HStack, VStack } from "@chakra-ui/react";
+import { Image, Text, HStack, VStack } from "@chakra-ui/react";
 
 import headshot from "./Images/profilephoto.jpeg";
 const About = () => {
@@ -28,9 +28,10 @@ const About = () => {
           <Text textStyle="heading">About Me</Text>
           <Text>
             I am an all round web developer. Lover of mountain bikes and problem
-            solving. Efficiency is my jazz, I always develop systems to do
-            things faster and easier. A geek for the details, if you dare to
-            then ask me about my bike.
+            solving. Very efficienct, I always develop systems to do things
+            faster and easier. Once I discovered JavaScript I was obsessed, I
+            love the challenge and the never-ending pursuit of mastery. A geek
+            for the details, if you dare to then ask me about my bikes.
           </Text>
         </VStack>
       </HStack>

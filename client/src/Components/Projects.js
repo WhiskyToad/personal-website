@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-import { projects } from "./data";
+import { projects } from "./Data/projects";
 
 const Projects = () => {
   const [choice, setChoice] = useState(projects[0]);
