@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, HStack } from "@chakra-ui/react";
+import { Box, Text, HStack, VStack, Spacer } from "@chakra-ui/react";
 
 import { BsChevronDoubleDown } from "react-icons/bs";
 
@@ -10,6 +10,7 @@ const Landing = () => {
     <>
       <Box
         h="100vh"
+        mb="100px"
         backgroundImage={`url(${background})`}
         backgroundPosition={[
           "left center",
@@ -20,24 +21,24 @@ const Landing = () => {
         backgroundRepeat="no-repeat"
         bgSize="cover"
       >
-        <HStack
-          w="40%"
-          bg="#222222"
-          mx="auto"
-          borderRadius="60px"
-          color="white"
-          fontSize="30px"
-          justify="space-evenly"
-        >
-          <BsChevronDoubleDown className="bounce" />
-          <Text
-            fontFamily="Karantina"
-            fontSize={["50px", "50px", "60px", "50px"]}
-          >
+        <VStack maxW="1100px" h="100vh" mx="auto" p="20px">
+          <Text textStyle="neon" className="flicker">
             Steven Craig
           </Text>
-          <BsChevronDoubleDown className="bounce" />
-        </HStack>
+          <Spacer />
+          <HStack
+            w="80%"
+            textStyle="neonSmall"
+            justify="space-between"
+            className="bounce"
+          >
+            <Box>
+              <BsChevronDoubleDown />
+            </Box>
+            <Text>Scroll down for more</Text>
+            <BsChevronDoubleDown />
+          </HStack>
+        </VStack>
       </Box>
     </>
   );

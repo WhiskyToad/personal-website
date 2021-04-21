@@ -17,7 +17,7 @@ const Home = () => {
 
   // handle scroll event
   const handleScroll = (elTopOffset, elHeight) => {
-    if (window.pageYOffset > elTopOffset + elHeight) {
+    if (window.pageYOffset > elTopOffset + elHeight + 100) {
       setSticky({ isSticky: true, offset: elHeight });
     } else {
       setSticky({ isSticky: false, offset: 0 });
