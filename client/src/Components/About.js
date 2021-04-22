@@ -16,7 +16,7 @@ const About = () => {
         <Image
           src={headshot}
           borderRadius="full"
-          boxSize="250px"
+          boxSize={{ base: "200px", md: "250px" }}
           alt="Steven Craig"
         />
 

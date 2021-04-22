@@ -13,7 +13,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <Image
             m="10px"
-            h="150px"
+            h={{ base: "100px", md: "150px" }}
             key={index}
             src={skill.img}
             alt={skill.name}

@@ -12,30 +12,30 @@ const ImgSegment = () => {
       maxW="1300px"
       mx="auto"
       py="75px"
-      justify="space-between"
+      justify={{ md: "space-between", base: "center" }}
       wrap="wrap"
     >
       <Image
         fit="cover"
-        h="390px"
-        w="390px"
+        h={{ md: "390px", base: "320px" }}
         borderRadius="10px"
+        my="10px"
         src={one}
         alt="me on my bike"
       />
       <Image
         fit="cover"
-        h="390px"
-        w="390px"
+        h={{ md: "390px", base: "320px" }}
         borderRadius="10px"
+        my="10px"
         src={two}
         alt="me on my bike"
       />
       <Image
         fit="cover"
-        h="390px"
-        w="390px"
+        h={{ md: "390px", base: "320px" }}
         borderRadius="10px"
+        my="10px"
         src={three}
         alt="me on my bike"
       />
