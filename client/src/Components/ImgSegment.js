@@ -15,9 +15,30 @@ const ImgSegment = () => {
       justify="space-between"
       wrap="wrap"
     >
-      <Image fit="cover" h="390px" w="390px" borderRadius="10px" src={one} />
-      <Image fit="cover" h="390px" w="390px" borderRadius="10px" src={two} />
-      <Image fit="cover" h="390px" w="390px" borderRadius="10px" src={three} />
+      <Image
+        fit="cover"
+        h="390px"
+        w="390px"
+        borderRadius="10px"
+        src={one}
+        alt="me on my bike"
+      />
+      <Image
+        fit="cover"
+        h="390px"
+        w="390px"
+        borderRadius="10px"
+        src={two}
+        alt="me on my bike"
+      />
+      <Image
+        fit="cover"
+        h="390px"
+        w="390px"
+        borderRadius="10px"
+        src={three}
+        alt="me on my bike"
+      />
     </HStack>
   );
 };

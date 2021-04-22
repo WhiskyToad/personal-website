@@ -9,7 +9,7 @@ const Work = () => {
         Work History
       </Text>
       <HStack maxW="600px" justify="space-between">
-        <VStack textStyle="subHeading" spacing={4} px="20px">
+        <VStack textStyle="subHeading" spacing={4} px="20px" minW="200px">
           <Text>Ian Craig Haulage</Text>
           <Text>2008-Present</Text>
         </VStack>

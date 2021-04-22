@@ -68,7 +68,7 @@ const Projects = () => {
         finalFocusRef={btnRef}
         size="xl"
       >
-        <DrawerOverlay>
+        <DrawerOverlay zIndex="99999">
           <DrawerContent>
             <Image
               src={choice.image}

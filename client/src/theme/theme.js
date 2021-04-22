@@ -29,13 +29,13 @@ const theme = extendTheme({
     neon: {
       fontFamily: ["neon"],
       color: "#FB4264",
-      fontSize: ["50px", "60px", "60px", "70px"],
+      fontSize: ["40px", "50px", "60px", "70px"],
       lineHeight: "9vw",
     },
     neonSmall: {
       fontFamily: ["neon"],
       color: "#FB4264",
-      fontSize: "40px",
+      fontSize: ["30px", "30px", "40px", "40px"],
       lineHeight: "9vw",
       textShadow: "0 0 3vw #fed128",
     },

@@ -18,7 +18,7 @@ const Education = () => {
           py="30px"
           key={index}
         >
-          <VStack textStyle="subHeading" spacing={4} px="20px">
+          <VStack textStyle="subHeading" spacing={4} px="20px" minW="200px">
             <Text>{course.course}</Text>
             <Text>{course.location}</Text>
             <Text>{course.year}</Text>
