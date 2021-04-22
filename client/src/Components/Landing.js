@@ -14,7 +14,7 @@ const Landing = () => {
         backgroundImage={`url(${background})`}
         backgroundPosition={[
           "left center",
-          "center center",
+          "left center",
           "center center",
           "center center",
         ]}

@@ -32,8 +32,8 @@ export const education = [
     to gain certification on a lorry mounted crane.`,
   },
   {
-    course: "Level 3 Award in Education and Training",
-    location: "PTLLS",
+    course: "Education and Training",
+    location: "PTLLS Level 3 ",
     year: "2018",
     description: `A course on teaching you how to educate people going through the
     different ways on how people learn and how to conduct training..`,

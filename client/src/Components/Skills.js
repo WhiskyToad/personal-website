@@ -1,21 +1,25 @@
 import React from "react";
-import { Box, Image, Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, Image, Text, HStack } from "@chakra-ui/react";
+
+import { skills } from "./Data/skills";
 
 const Skills = () => {
   return (
-    <Box bpy="2%" w="100%" bgColor="white">
-      <Text fontSize={["30px", "30px", "50px", "50px"]}>Skills</Text>
-      <Text
-        fontSize={["15px", "15px", "20px", "20px"]}
-        maxW="650px"
-        mx="5px"
-        pt="20px"
-        pb="40px"
-        borderBottom="1px solid white"
-      >
-        JavaScript | React + Redux | HTML5 | CSS3 | NodeJS | MongoDB | GitHub |
-        Management Skills | Instructor | Highly Teachable
+    <Box mx="auto" maxW="1000px" pt="80px" textAlign="center">
+      <Text textStyle="heading" py="40px" id="skills">
+        Skills
       </Text>
+      <HStack maxW="1000px" wrap="wrap" justify="center">
+        {skills.map((skill, index) => (
+          <Image
+            m="10px"
+            h="150px"
+            key={index}
+            src={skill.img}
+            alt={skill.name}
+          ></Image>
+        ))}
+      </HStack>
     </Box>
   );
 };

@@ -5,7 +5,8 @@ const theme = extendTheme({
     global: {
       body: {
         fontFamily: "Open Sans",
-        fontSize: "18px",
+        fontSize: "16px",
+        lineHeight: "1.64",
       },
     },
   },
@@ -23,12 +24,12 @@ const theme = extendTheme({
     },
     subHeading: {
       fontFamily: ["BebasNeue"],
-      fontSize: ["28px", "38px", "38px", "24px"],
+      fontSize: ["20px", "24pxx", "24px", "24px"],
     },
     neon: {
       fontFamily: ["neon"],
       color: "#FB4264",
-      fontSize: "70px",
+      fontSize: ["50px", "60px", "60px", "70px"],
       lineHeight: "9vw",
     },
     neonSmall: {

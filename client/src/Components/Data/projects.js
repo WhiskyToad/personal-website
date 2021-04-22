@@ -1,7 +1,7 @@
-import BrewersDiary from "../Images/BrewersDiary.png";
-import lartsy from "../Images/lartsy.png";
-import memory from "../Images/memory.png";
-import toadoo from "../Images/toadoo.png";
+import BrewersDiary from "../Images/Projects/BrewersDiary.jpg";
+import lartsy from "../Images/Projects/lartsy.jpg";
+import memory from "../Images/Projects/memory.jpg";
+import toadoo from "../Images/Projects/toadoo.jpg";
 
 export const projects = [
   {
