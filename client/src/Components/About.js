@@ -1,39 +1,62 @@
 import React from "react";
-import { Image, Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, Text, HStack, VStack, Tooltip } from "@chakra-ui/react";
+import { GiFrogPrince } from "react-icons/gi";
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-import headshot from "./Images/profilephoto.jpeg";
 const About = () => {
   return (
     <>
-      <HStack
-        mx="auto"
-        pt="50px"
-        maxW="1000px"
-        justify="space-between"
-        align="flex-start"
-        id="about"
-      >
-        <Image
-          src={headshot}
-          borderRadius="full"
-          boxSize={{ base: "200px", md: "250px" }}
-          alt="Steven Craig"
-        />
-
-        <VStack w="50%">
-          <Text textStyle="heading">About Me</Text>
+      <Box bg="teal" pt="80px" pb="200px">
+        <VStack
+          justify="center"
+          mx="auto"
+          maxW="800px"
+          color="white"
+          textAlign="center"
+          spacing={12}
+        >
+          <GiFrogPrince fontSize="60px" />
           <Text>
-            I am an all round web developer. Lover of mountain bikes and problem
-            solving. Very efficient, I always develop systems to do things
-            faster and easier. Once I discovered JavaScript and web design I was
-            obsessed, I love the challenge and the never-ending pursuit of
-            mastery. A geek for the details, if you dare to then ask me about my
-            bikes.
+            I am a junior full-stack developer with a focus on React and Node.
+            Process orientated and goal driven, I know the end result and I
+            focus on the steps to get there. Always striving to be better and
+            learn new things.
           </Text>
+          <Links />
         </VStack>
-      </HStack>
+      </Box>
     </>
   );
 };
 
+//Navbar links
+const Links = () => {
+  return (
+    <>
+      <HStack
+        color="white"
+        justify="space-between"
+        align="baseline"
+        fontSize="60px"
+        w="50%"
+      >
+        <Tooltip hasArrow label="Linkedin profile" bg="black">
+          <a href="https://www.linkedin.com/in/steven-craig-082717203/">
+            <AiFillLinkedin alt="linked in" />
+          </a>
+        </Tooltip>
+        <Tooltip hasArrow label="Github link" bg="black">
+          <a href="https://github.com/WhiskyToad">
+            <AiFillGithub alt="github" />
+          </a>
+        </Tooltip>
+        <Tooltip hasArrow label="Email me" bg="black">
+          <a href="mailto:stevencraig321@gmail.com">
+            <AiOutlineMail alt="email" />
+          </a>
+        </Tooltip>
+      </HStack>
+    </>
+  );
+};
 export default About;

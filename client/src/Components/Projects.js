@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
-import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
-import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 
 import {
+  Grid,
   Box,
   Image,
   Text,
@@ -35,23 +33,15 @@ const Projects = () => {
 
   return (
     <>
-      <Box
-        maxW="1000px"
-        mx="auto"
-        cursor="pointer"
-        textAlign="center"
-        id="projects"
-      >
-        <Text textStyle="heading" py="40px">
-          Projects
-        </Text>
-        <AwesomeSlider animation="cubeAnimation">
+      <VStack maxW="1200px" mx="auto" textAlign="center">
+        <h2>My Recent Projects</h2>
+        <Grid templateColumns="repeat(3, 1fr)" gap={4}>
           {projects.map((project, index) => (
             <Box
-              rounded="20px"
-              m="20px"
+              w="380px"
               cursor="pointer"
-              bg="white"
+              borderRadius="10px"
+              overflow="hidden"
               key={index}
               ref={btnRef}
               onClick={() => handleClick(project)}
@@ -59,8 +49,8 @@ const Projects = () => {
               <Image src={project.image} alt={project.title} />
             </Box>
           ))}
-        </AwesomeSlider>
-      </Box>
+        </Grid>
+      </VStack>
       <Drawer
         isOpen={isOpen}
         placement="right"

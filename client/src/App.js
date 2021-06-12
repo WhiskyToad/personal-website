@@ -5,7 +5,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme/theme";
 import Fonts from "./theme/font-face";
 
-import Home from "./Components/Home";
+import Home from "./Pages/Home";
 
 const App = () => {
   return (

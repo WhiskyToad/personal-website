@@ -38,15 +38,4 @@ export const projects = [
     code: "https://github.com/WhiskyToad/memory-game",
     preview: "https://whiskytoad.github.io/memory-game",
   },
-  {
-    title: "ToaDoo List",
-    image: toadoo,
-    description: `A simple todo list, added a dynamically created filter, animation
-    for the sidebar and a hover over description. (and a stupid play
-    on the name!) Built on vanilla JavaScript with HTML and CSS, I learned quite a lot on this 
-    and had to come back to it once I had advanced a bit to finally get the filter function to work 
-    as intended.`,
-    code: "https://github.com/WhiskyToad/toadoo-list",
-    preview: "https://whiskytoad.github.io/toadoo-list",
-  },
 ];

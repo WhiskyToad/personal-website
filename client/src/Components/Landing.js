@@ -1,45 +1,25 @@
 import React from "react";
-import { Box, Text, HStack, VStack, Spacer } from "@chakra-ui/react";
 
-import { BsChevronDoubleDown } from "react-icons/bs";
+import { Box, Text, HStack, VStack, Image } from "@chakra-ui/react";
 
-import background from "./Images/kinlochleven1.jpg";
+import portrait from "./Images/portrait.jpg";
 
 const Landing = () => {
   return (
     <>
-      <Box
-        h="100vh"
-        mb="100px"
-        backgroundImage={`url(${background})`}
-        backgroundPosition={[
-          "left center",
-          "left center",
-          "center center",
-          "center center",
-        ]}
-        backgroundRepeat="no-repeat"
-        bgSize="cover"
-      >
-        <VStack maxW="1100px" h="100vh" mx="auto" p="20px">
-          <Text textStyle="neon" className="flicker">
-            Steven Craig
-          </Text>
-          <Spacer />
-          <HStack
-            w="80%"
-            textStyle="neonSmall"
-            justify="space-between"
-            className="bounce"
-          >
-            <Box>
-              <BsChevronDoubleDown />
+      <VStack h="100vh" maxW="800px" mx="auto" justify="flex-end">
+        <VStack mb="20%">
+          <HStack>
+            <h2>Hello there, I'm </h2>
+            <Box color="red">
+              <h2>Steven Craig.</h2>
             </Box>
-            <Text>Scroll down for more</Text>
-            <BsChevronDoubleDown />
           </HStack>
+          <h2>A full-stack web developer.</h2>
         </VStack>
-      </Box>
+
+        <Image src={portrait} alt="Steven Craig" w="300px" h="500px" />
+      </VStack>
     </>
   );
 };
