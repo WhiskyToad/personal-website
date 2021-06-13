@@ -33,12 +33,18 @@ const Projects = () => {
 
   return (
     <>
-      <VStack maxW="1200px" mx="auto" textAlign="center">
+      <VStack
+        maxW="1200px"
+        mx="auto"
+        my="200px"
+        textAlign="center"
+        spacing={10}
+      >
         <h2>My Recent Projects</h2>
         <Grid templateColumns="repeat(3, 1fr)" gap={4}>
           {projects.map((project, index) => (
             <Box
-              w="380px"
+              position="relative"
               cursor="pointer"
               borderRadius="10px"
               overflow="hidden"
@@ -46,7 +52,12 @@ const Projects = () => {
               ref={btnRef}
               onClick={() => handleClick(project)}
             >
-              <Image src={project.image} alt={project.title} />
+              <Image
+                src={project.image}
+                alt={project.title}
+                h="280px"
+                w="400px"
+              />
             </Box>
           ))}
         </Grid>

@@ -6,21 +6,21 @@ import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const About = () => {
   return (
     <>
-      <Box bg="teal" pt="80px" pb="200px">
+      <Box bg="purple" pt="80px" pb="250px">
         <VStack
           justify="center"
           mx="auto"
-          maxW="800px"
+          maxW="700px"
           color="white"
           textAlign="center"
           spacing={12}
         >
           <GiFrogPrince fontSize="60px" />
           <Text>
-            I am a junior full-stack developer with a focus on React and Node.
-            Process orientated and goal driven, I know the end result and I
-            focus on the steps to get there. Always striving to be better and
-            learn new things.
+            I am a full-stack developer with a focus on React and Node. Process
+            orientated and goal driven, I know the end result and I focus on the
+            steps to get there. Always striving to be better and learn new
+            things.
           </Text>
           <Links />
         </VStack>

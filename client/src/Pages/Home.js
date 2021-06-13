@@ -1,20 +1,26 @@
 import React from "react";
 
-import About from "../Components/About";
+import { Box } from "@chakra-ui/react";
 
-import Projects from "../Components/Projects";
-import Skills from "../Components/Skills";
+import Loading from "../Components/Loading";
 import Landing from "../Components/Landing";
+import About from "../Components/About";
+import Skills from "../Components/Skills";
+import Projects from "../Components/Projects";
+import Tech from "../Components/Tech";
 
-import "./styles.css";
-
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
       <Landing />
-      <About />
-      <Skills />
-      <Projects />
+      <Box bg="white" zIndex="-999">
+        <About />
+        <Skills />
+        <Projects />
+        <Tech />
+        <Footer />
+      </Box>
     </>
   );
 };

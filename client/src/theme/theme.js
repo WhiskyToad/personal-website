@@ -2,23 +2,24 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   colors: {
-    teal: "#04c2c9",
-    red: "#c21d63",
-    grey: "#6b95a6",
-    blue: "#6359ff",
+    offWhite: "#f9eeeb",
+    grey: "#E6ECF8",
+    purple: "#a65de5",
+    blue: "#a1035b",
   },
   styles: {
     global: {
       body: {
         fontFamily: "Source Sans Pro",
-        fontSize: "22px",
-        fontWeight: "1000",
+        fontSize: "20px",
+        fontWeight: "800",
         lineHeight: "1.64",
-        bg: "#f3efe0",
+        bg: "white",
       },
       h1: {
-        fontFamily: "Lobster",
-        fontSize: "30px",
+        fontFamily: "Montserrat",
+        fontSize: "42px",
+        color: "purple",
       },
       h2: {
         fontFamily: "Montserrat",
@@ -26,51 +27,35 @@ const theme = extendTheme({
       },
       h3: {
         fontFamily: "Montserrat",
-        fontSize: "30px",
+        fontSize: "38px",
+        color: "purple",
       },
-      li: {
-        listStyle: "none",
-        float: "left",
-        mx: "20px",
-        color: "white",
-        cursor: "pointer",
-        fontWeight: "1000",
+      h4: {
+        fontFamily: "Montserrat",
+        fontSize: "24px",
       },
     },
   },
   components: {
-    ListItem: {
-      listStyle: "none",
+    Button: {
+      variants: {
+        contact: {
+          color: "purple",
+          border: "2px solid purple",
+          borderRadius: "20px",
+          _hover: {
+            bg: "purple",
+            color: "white",
+          },
+        },
+      },
     },
   },
   textStyles: {
-    navBarTitle: {
-      fontFamily: ["BebasNeue"],
-      fontSize: ["28px", "38px", "38px", "54px"],
-      color: "#daad86",
-    },
-    heading: {
-      fontFamily: ["Raleway", "sans-serif"],
-      fontSize: ["28px", "38px", "38px", "34px"],
-
-      color: "#659dbd",
-    },
-    subHeading: {
-      fontFamily: ["BebasNeue"],
-      fontSize: ["20px", "24pxx", "24px", "24px"],
-    },
-    neon: {
-      fontFamily: ["neon"],
-      color: "#FB4264",
-      fontSize: ["40px", "50px", "60px", "70px"],
-      lineHeight: "9vw",
-    },
-    neonSmall: {
-      fontFamily: ["neon"],
-      color: "#FB4264",
-      fontSize: ["30px", "30px", "40px", "40px"],
-      lineHeight: "9vw",
-      textShadow: "0 0 3vw #fed128",
+    project: {
+      fontFamily: "Monteserrat",
+      fontSize: ["28px", "38px", "38px", "30px"],
+      color: "white",
     },
   },
 });
