@@ -1,7 +1,7 @@
 import React from "react";
-import { List, ListItem, Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, List, ListItem, Text, HStack, VStack } from "@chakra-ui/react";
 import { RiComputerLine } from "react-icons/ri";
-import { FaNetworkWired } from "react-icons/fa";
+import { IoServerOutline } from "react-icons/io5";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 
 const Tech = () => {
@@ -16,7 +16,7 @@ const Tech = () => {
         textAlign="center"
         spacing={12}
       >
-        <h4>My Tech Stack</h4>
+        <h2>My Tech Stack</h2>
         <Text maxW="700px">
           This is the tech I currently have a firm understanding of. I am
           constantly building projects and expanding my knowledge.
@@ -25,8 +25,9 @@ const Tech = () => {
       <HStack
         bg="white"
         mt="-50px"
+        mb="200px"
         mx="auto"
-        maxW="1000px"
+        maxW="650px"
         justify="space-evenly"
         align="flex-start"
         border=" 1px solid #E6ECF8"
@@ -36,7 +37,9 @@ const Tech = () => {
         textAlign="center"
       >
         <VStack w="33%" spacing={6} p="40px 20px">
-          <RiComputerLine fontSize="60px" color="#ff4500" />
+          <Box textStyle="icon">
+            <RiComputerLine />
+          </Box>
           <h4>Front-End</h4>
           <List>
             <ListItem>React</ListItem>
@@ -49,13 +52,15 @@ const Tech = () => {
 
         <VStack
           w="33%"
-          minH="100%"
+          h="400px"
           spacing={6}
           p="40px 20px"
           borderRight=" 1px solid #E6ECF8"
           borderLeft=" 1px solid #E6ECF8"
         >
-          <FaNetworkWired fontSize="60px" color="#ff4500" />
+          <Box textStyle="icon">
+            <IoServerOutline />
+          </Box>
           <h4>Back-End</h4>
           <List>
             <ListItem>NodeJS</ListItem>
@@ -64,13 +69,14 @@ const Tech = () => {
           </List>
         </VStack>
         <VStack w="33%" spacing={6} p="40px 20px">
-          <GiPerspectiveDiceSixFacesRandom fontSize="60px" color="#ff4500" />
+          <Box textStyle="icon">
+            <GiPerspectiveDiceSixFacesRandom />
+          </Box>
           <h4>Others</h4>
           <List>
             <ListItem>Redux</ListItem>
             <ListItem>GraphQL</ListItem>
             <ListItem>REST API</ListItem>
-            <ListItem>Apollo</ListItem>
           </List>
         </VStack>
       </HStack>

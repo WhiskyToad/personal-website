@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { Button, Box, HStack, VStack, Image, Text } from "@chakra-ui/react";
+import { Box, HStack, VStack } from "@chakra-ui/react";
 
 import "./styles.scss";
 
@@ -15,13 +15,13 @@ const variants = {
   leftEnd: {
     x: 0,
     transition: {
-      delay: 0.8,
+      delay: 1.0,
     },
   },
   rightEnd: {
     x: 0,
     transition: {
-      delay: 1.2,
+      delay: 2.0,
     },
   },
 };
@@ -29,25 +29,16 @@ const variants = {
 const Landing = () => {
   return (
     <>
-      <div class="page-bg">
-        <div class="animation-wrapper">
-          <div class="particle particle-1"></div>
-          <div class="particle particle-2"></div>
-          <div class="particle particle-3"></div>
-          <div class="particle particle-4"></div>
+      <div className="page-bg">
+        <div className="animation-wrapper">
+          <div className="particle particle-1"></div>
+          <div className="particle particle-2"></div>
+          <div className="particle particle-3"></div>
+          <div className="particle particle-4"></div>
         </div>
-      </div>
-      <div class="page-wrapper">
-        <VStack h="100vh" mx="auto" justify="space-between">
-          <HStack mt="40px" w="80%" justify="space-between">
-            <Button variant="contact">
-              <Text>Other</Text>
-            </Button>
-            <Button variant="contact">
-              <Text>Contact</Text>
-            </Button>
-          </HStack>
-          <VStack mb="20%" color="white">
+
+        <div className="page-wrapper">
+          <VStack h="100vh" justify="center" align="center" color="white">
             <motion.div variants={variants} initial="left" animate="leftEnd">
               <HStack>
                 <h2>Hello there, I'm </h2>
@@ -60,7 +51,7 @@ const Landing = () => {
               <h2>A full-stack web developer.</h2>
             </motion.div>
           </VStack>
-        </VStack>
+        </div>
       </div>
     </>
   );

@@ -4,8 +4,8 @@ const theme = extendTheme({
   colors: {
     offWhite: "#f9eeeb",
     grey: "#E6ECF8",
-    purple: "#a65de5",
-    blue: "#a1035b",
+    purple: "#AA00FF",
+    orange: "#ff4500",
   },
   styles: {
     global: {
@@ -32,6 +32,7 @@ const theme = extendTheme({
       },
       h4: {
         fontFamily: "Montserrat",
+        fontWeight: "500",
         fontSize: "24px",
       },
     },
@@ -56,6 +57,10 @@ const theme = extendTheme({
       fontFamily: "Monteserrat",
       fontSize: ["28px", "38px", "38px", "30px"],
       color: "white",
+    },
+    icon: {
+      fontSize: "60px",
+      color: "purple",
     },
   },
 });

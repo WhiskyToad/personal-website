@@ -6,7 +6,7 @@ import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 const About = () => {
   return (
     <>
-      <Box bg="purple" pt="80px" pb="250px">
+      <Box bg="purple" mt="100vh" pt="80px" pb="250px">
         <VStack
           justify="center"
           mx="auto"

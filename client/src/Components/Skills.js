@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, Text, HStack, VStack } from "@chakra-ui/react";
 
 import { IoRocketOutline } from "react-icons/io5";
 import { HiOutlineRefresh } from "react-icons/hi";
@@ -25,7 +25,9 @@ const Skills = () => {
         boxShadow="md"
         zIndex="99"
       >
-        <IoRocketOutline fontSize="60px" color="#ff4500" />
+        <Box textStyle="icon">
+          <IoRocketOutline />
+        </Box>
         <h4>Speed</h4>
         <Text>
           A racer by heart my sites are no exception, I am always striving and
@@ -42,7 +44,9 @@ const Skills = () => {
         boxShadow="md"
         zIndex="99"
       >
-        <AiOutlinePicture fontSize="60px" color="#ff4500" />
+        <Box textStyle="icon">
+          <AiOutlinePicture />
+        </Box>
         <h4>Big-picture thinker</h4>
         <Text>
           I take pride in my ability to stand back and see the big picture and
@@ -59,7 +63,9 @@ const Skills = () => {
         boxShadow="md"
         zIndex="99"
       >
-        <HiOutlineRefresh fontSize="60px" color="#ff4500" />
+        <Box textStyle="icon">
+          <HiOutlineRefresh />
+        </Box>
         <h4>Dynamic</h4>
         <Text>
           Never one to shy away from a challenge I'll learn whatever is

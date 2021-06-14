@@ -1,14 +1,14 @@
 import React from "react";
-import { Box, Text, HStack, VStack, Tooltip } from "@chakra-ui/react";
+import { Text, HStack } from "@chakra-ui/react";
 import { GiFrogPrince } from "react-icons/gi";
 
 const Footer = () => {
   return (
-    <VStack bg="purple">
+    <HStack bg="#afddf1" justify="center" borderTop="2px solid black">
       <GiFrogPrince />
-      <Text>Created by WhiskyToad</Text>
-      <Text>Built on React. Styled by Chakra UI.</Text>
-    </VStack>
+      <Text px="20px">A WhiskyToad creation</Text>
+      <GiFrogPrince />
+    </HStack>
   );
 };
 

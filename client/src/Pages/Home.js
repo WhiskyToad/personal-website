@@ -2,7 +2,6 @@ import React from "react";
 
 import { Box } from "@chakra-ui/react";
 
-import Loading from "../Components/Loading";
 import Landing from "../Components/Landing";
 import About from "../Components/About";
 import Skills from "../Components/Skills";
