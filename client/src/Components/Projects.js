@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import {
-  Grid,
+  Flex,
   Box,
   Image,
   Text,
@@ -41,10 +41,10 @@ const Projects = () => {
         spacing={10}
       >
         <h2>My Recent Projects</h2>
-        <Grid templateColumns="repeat(3, 1fr)" gap={4}>
+        <Flex direction={{ base: "column", md: "row" }} spacing={4}>
           {projects.map((project, index) => (
             <Box
-              position="relative"
+              m="10px"
               cursor="pointer"
               borderRadius="10px"
               overflow="hidden"
@@ -60,8 +60,9 @@ const Projects = () => {
               />
             </Box>
           ))}
-        </Grid>
+        </Flex>
       </VStack>
+
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -70,14 +71,14 @@ const Projects = () => {
         size="xl"
       >
         <DrawerOverlay zIndex="99999">
-          <DrawerContent>
+          <DrawerContent textAlign="center">
             <Image
               src={choice.image}
               alt={choice.title}
               borderBottom="1px solid teal"
             />
-            <DrawerHeader textStyle="heading" textAlign="center">
-              {choice.title}
+            <DrawerHeader textAlign="center">
+              <h3>{choice.title}</h3>
             </DrawerHeader>
 
             <DrawerBody>

@@ -10,11 +10,13 @@ const About = () => {
         <VStack
           justify="center"
           mx="auto"
+          px="20px"
           maxW="700px"
           color="white"
           textAlign="center"
           spacing={12}
         >
+          <h3>About</h3>
           <GiFrogPrince fontSize="60px" />
           <Text>
             I am a full-stack developer with a focus on React and Node. Process
@@ -38,7 +40,7 @@ const Links = () => {
         justify="space-between"
         align="baseline"
         fontSize="60px"
-        w="50%"
+        w="320px"
       >
         <Tooltip hasArrow label="Linkedin profile" bg="black">
           <a href="https://www.linkedin.com/in/steven-craig-082717203/">

@@ -11,29 +11,28 @@ const theme = extendTheme({
     global: {
       body: {
         fontFamily: "Source Sans Pro",
-        fontSize: "20px",
+        fontSize: ["16px", "16px", "18px", "20px"],
         fontWeight: "800",
         lineHeight: "1.64",
         bg: "white",
       },
       h1: {
         fontFamily: "Montserrat",
-        fontSize: "42px",
+        fontSize: ["24px", "30px", "42px", "42px"],
         color: "purple",
       },
       h2: {
         fontFamily: "Montserrat",
-        fontSize: "40px",
+        fontSize: ["22px", "28px", "40px", "40px"],
       },
       h3: {
         fontFamily: "Montserrat",
-        fontSize: "38px",
-        color: "purple",
+        fontSize: ["20px", "26px", "38px", "38px"],
       },
       h4: {
         fontFamily: "Montserrat",
         fontWeight: "500",
-        fontSize: "24px",
+        fontSize: ["20px", "20px", "24px", "24px"],
       },
     },
   },
@@ -59,7 +58,7 @@ const theme = extendTheme({
       color: "white",
     },
     icon: {
-      fontSize: "60px",
+      fontSize: ["40px", "40px", "50px", "60px"],
       color: "purple",
     },
   },

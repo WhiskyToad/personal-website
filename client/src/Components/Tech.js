@@ -1,5 +1,13 @@
 import React from "react";
-import { Box, List, ListItem, Text, HStack, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  List,
+  ListItem,
+  Text,
+  HStack,
+  VStack,
+  Flex,
+} from "@chakra-ui/react";
 import { RiComputerLine } from "react-icons/ri";
 import { IoServerOutline } from "react-icons/io5";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
@@ -12,6 +20,7 @@ const Tech = () => {
         color="white"
         w="100%"
         py="100px"
+        px="20px"
         justify="center"
         textAlign="center"
         spacing={12}
@@ -22,21 +31,23 @@ const Tech = () => {
           constantly building projects and expanding my knowledge.
         </Text>
       </VStack>
-      <HStack
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        maxW={{ base: "220px", md: "680px" }}
+        h={{ base: "null", md: "400px" }}
         bg="white"
         mt="-50px"
         mb="200px"
         mx="auto"
-        maxW="650px"
         justify="space-evenly"
-        align="flex-start"
+        align={{ base: "center", md: "flex-start" }}
         border=" 1px solid #E6ECF8"
         borderRadius="20px"
         boxShadow="md"
-        zIndex="99"
+        zIndex="999"
         textAlign="center"
       >
-        <VStack w="33%" spacing={6} p="40px 20px">
+        <VStack w="220px" spacing={6} p="40px 20px">
           <Box textStyle="icon">
             <RiComputerLine />
           </Box>
@@ -51,8 +62,8 @@ const Tech = () => {
         </VStack>
 
         <VStack
-          w="33%"
-          h="400px"
+          w="220px"
+          h="100%"
           spacing={6}
           p="40px 20px"
           borderRight=" 1px solid #E6ECF8"
@@ -68,7 +79,7 @@ const Tech = () => {
             <ListItem>NoSQL</ListItem>
           </List>
         </VStack>
-        <VStack w="33%" spacing={6} p="40px 20px">
+        <VStack w="220px" spacing={6} p="40px 20px">
           <Box textStyle="icon">
             <GiPerspectiveDiceSixFacesRandom />
           </Box>
@@ -79,7 +90,7 @@ const Tech = () => {
             <ListItem>REST API</ListItem>
           </List>
         </VStack>
-      </HStack>
+      </Flex>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, Text, Flex, VStack } from "@chakra-ui/react";
 
 import { IoRocketOutline } from "react-icons/io5";
 import { HiOutlineRefresh } from "react-icons/hi";
@@ -7,17 +7,17 @@ import { AiOutlinePicture } from "react-icons/ai";
 
 const Skills = () => {
   return (
-    <HStack
+    <Flex
+      direction={{ base: "column", md: "row" }}
       mx="auto"
       mt="-150px"
-      maxW="1000px"
       justify="space-evenly"
-      align="flex-start"
+      align="center"
       textAlign="center"
     >
       <VStack
         bg="white"
-        w="33%"
+        w="350px"
         spacing={6}
         p="40px 20px"
         border=" 1px solid #E6ECF8"
@@ -36,7 +36,8 @@ const Skills = () => {
       </VStack>
       <VStack
         bg="white"
-        w="33%"
+        w="350px"
+        m="10px"
         spacing={6}
         p="40px 20px"
         border=" 1px solid #E6ECF8"
@@ -55,7 +56,7 @@ const Skills = () => {
       </VStack>
       <VStack
         bg="white"
-        w="33%"
+        w="350px"
         spacing={6}
         p="40px 20px"
         border=" 1px solid #E6ECF8"
@@ -72,7 +73,7 @@ const Skills = () => {
           necessarry to provide the best projects and experience I can.
         </Text>
       </VStack>
-    </HStack>
+    </Flex>
   );
 };
 
