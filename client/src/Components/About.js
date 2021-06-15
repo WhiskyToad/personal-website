@@ -16,8 +16,8 @@ const About = () => {
           textAlign="center"
           spacing={12}
         >
+          <GiFrogPrince fontSize="60px" alt="toad" />
           <h3>About</h3>
-          <GiFrogPrince fontSize="60px" />
           <Text>
             I am a full-stack developer with a focus on React and Node. Process
             orientated and goal driven, I know the end result and I focus on the
@@ -43,12 +43,20 @@ const Links = () => {
         w="320px"
       >
         <Tooltip hasArrow label="Linkedin profile" bg="black">
-          <a href="https://www.linkedin.com/in/steven-craig-082717203/">
+          <a
+            href="https://www.linkedin.com/in/steven-craig-082717203/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AiFillLinkedin alt="linked in" />
           </a>
         </Tooltip>
         <Tooltip hasArrow label="Github link" bg="black">
-          <a href="https://github.com/WhiskyToad">
+          <a
+            href="https://github.com/WhiskyToad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AiFillGithub alt="github" />
           </a>
         </Tooltip>

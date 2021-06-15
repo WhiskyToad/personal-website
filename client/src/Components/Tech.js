@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  List,
-  ListItem,
-  Text,
-  HStack,
-  VStack,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, List, ListItem, Text, VStack, Flex } from "@chakra-ui/react";
 import { RiComputerLine } from "react-icons/ri";
 import { IoServerOutline } from "react-icons/io5";
 import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
@@ -49,7 +41,7 @@ const Tech = () => {
       >
         <VStack w="220px" spacing={6} p="40px 20px">
           <Box textStyle="icon">
-            <RiComputerLine />
+            <RiComputerLine alt="front end" />
           </Box>
           <h4>Front-End</h4>
           <List>
@@ -70,7 +62,7 @@ const Tech = () => {
           borderLeft=" 1px solid #E6ECF8"
         >
           <Box textStyle="icon">
-            <IoServerOutline />
+            <IoServerOutline alt="back end" />
           </Box>
           <h4>Back-End</h4>
           <List>
@@ -81,7 +73,7 @@ const Tech = () => {
         </VStack>
         <VStack w="220px" spacing={6} p="40px 20px">
           <Box textStyle="icon">
-            <GiPerspectiveDiceSixFacesRandom />
+            <GiPerspectiveDiceSixFacesRandom alt="others" />
           </Box>
           <h4>Others</h4>
           <List>

@@ -11,6 +11,7 @@ const Skills = () => {
       direction={{ base: "column", md: "row" }}
       mx="auto"
       mt="-150px"
+      maxW="1100px"
       justify="space-evenly"
       align="center"
       textAlign="center"
@@ -26,7 +27,7 @@ const Skills = () => {
         zIndex="99"
       >
         <Box textStyle="icon">
-          <IoRocketOutline />
+          <IoRocketOutline alt="rocket" />
         </Box>
         <h4>Speed</h4>
         <Text>
@@ -46,7 +47,7 @@ const Skills = () => {
         zIndex="99"
       >
         <Box textStyle="icon">
-          <AiOutlinePicture />
+          <AiOutlinePicture alt="picture" />
         </Box>
         <h4>Big-picture thinker</h4>
         <Text>
@@ -65,7 +66,7 @@ const Skills = () => {
         zIndex="99"
       >
         <Box textStyle="icon">
-          <HiOutlineRefresh />
+          <HiOutlineRefresh alt="dynamic" />
         </Box>
         <h4>Dynamic</h4>
         <Text>
