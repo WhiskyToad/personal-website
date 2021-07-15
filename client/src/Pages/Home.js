@@ -7,8 +7,9 @@ import About from "../Components/About";
 import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
 import Tech from "../Components/Tech";
-
+import Blog from "../Components/Blog";
 import Footer from "../Components/Footer";
+
 const Home = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home = () => {
         <Skills />
         <Projects />
         <Tech />
+        <Blog />
         <Footer />
       </Box>
     </>

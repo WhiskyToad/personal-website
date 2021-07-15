@@ -34,6 +34,10 @@ const theme = extendTheme({
         fontWeight: "500",
         fontSize: ["20px", "20px", "24px", "24px"],
       },
+      h5: {
+        fontFamily: "Aldrich",
+        fontSize: "30px",
+      },
     },
   },
   components: {
