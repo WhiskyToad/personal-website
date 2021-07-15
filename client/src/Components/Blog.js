@@ -3,7 +3,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 
 import { motion } from "framer-motion";
-import { HStack, VStack, Flex, Link, Image, Text } from "@chakra-ui/react";
+import { HStack, VStack, Flex, Image, Text } from "@chakra-ui/react";
 
 const Blog = () => {
   const MotionHStack = motion(HStack);
@@ -66,7 +66,7 @@ const Blog = () => {
       </a>
     );
   };
-
+  if (error) return <h1>Whoops something went wrong.</h1>;
   return (
     <VStack maxW="1200px" mx="auto" my="200px" textAlign="center" spacing={10}>
       <h2>My Blog</h2>
