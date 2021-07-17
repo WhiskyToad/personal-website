@@ -53,7 +53,7 @@ const Skills = () => {
             <Box textStyle="icon">
               <FaMobileAlt alt="picture" />
             </Box>
-            <h4>Repsonsive</h4>
+            <h4>Responsive</h4>
             <Text>
               The modern web is nothing without mobile compatibility, for that
               reason all my sites are designed from the ground up to be
@@ -76,7 +76,7 @@ const Skills = () => {
             <h4>Dynamic</h4>
             <Text>
               Never one to shy away from a challenge I'll learn whatever is
-              necessarry to provide the best projects and experience I can.
+              necessary to provide the best projects and experience I can.
             </Text>
           </VStack>
         </Flex>

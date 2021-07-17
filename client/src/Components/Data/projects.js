@@ -6,7 +6,8 @@ export const projects = [
   {
     title: "Brewers Diary",
     image: BrewersDiary,
-    description: `I dabble in homebrewing beer and I wanted to create a place where people could share 
+    excerpt: "A recipe logging and sharing site built on the MERN stack.",
+    description: `I dabble in home-brewing beer and I wanted to create a place where people could share 
     recipes and keep brewing notes, so in comes brewers diary! It is built on React + Node, using axios 
     for API calls and redux to manage data. Current features are full CRUD functionality and an auth system 
     with Google sign in. I learned a TON from this, far too much to possibly list but I could go days without any real 
@@ -15,26 +16,23 @@ export const projects = [
     preview: "https://www.brewersdiary.com/recipes",
   },
   {
-    title: "Lartsy",
+    title: "Giphy",
     image: lartsy,
-    description: `An example of a shop page, includes a random meme generator (as a way to practice promises).
-    Was supposed to just be a shopping cart multi page function but I
-    wanted to go beyond and try to teach myself a few more techniques
-    including redux and try to style it to look like an actual e-commerce site.`,
-    code: "https://github.com/WhiskyToad/shopping-cart",
-    preview: "https://whiskytoad.github.io/shopping-cart/#/",
+    excerpt: "A Giphy clone built on React.",
+    description: `After learning a lot and improving my coding skills with various bigger sized projects I wanted to go back and practice my new
+    found skills and techniques on something smaller and try to copy an existing website. Built using Giphy's simple API and using React with Chakra UI for speed and
+    ease of use. I tried to follow the DRY principle a lot whilst also keeping my code clean, simple and easy to follow.`,
+    code: "https://github.com/WhiskyToad/giphy",
+    preview: "https://whiskytoad.github.io/giphy/",
   },
   {
-    title: "Memory Game",
+    title: "King of Tech",
     image: memory,
-    description: `A little game of memory, pick each one only once! 
-    The original project was supposed to display all cards at once and shuffle
-     after you have made a choice, however I wanted to try and make it more game like, I
-      especially liked the problem solving challenge of ensuring at least one card 
-      every round hadn't been picked before. Built on React and it was this project where I finally
-      started to click with React and understand and enjoy building things with it
-       and of course I loved picking the images for this one!`,
-    code: "https://github.com/WhiskyToad/memory-game",
-    preview: "https://whiskytoad.github.io/memory-game",
+    excerpt: "My blog, built on Django and React",
+    description: `I wanted to try and enhance my learning by writing about it. After starting my coding career 
+    learning basic Python I decided to go back since I knew Django was great for things like blogs. I kept this really clean and simple 
+    and it is probably my favorite design so far.`,
+    code: "https://github.com/WhiskyToad/blog",
+    preview: "https://king-of.tech/blog",
   },
 ];

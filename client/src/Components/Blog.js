@@ -7,15 +7,20 @@ import { HStack, VStack, Flex, Image, Text } from "@chakra-ui/react";
 
 const Blog = () => {
   const MotionHStack = motion(HStack);
-  const { isLoading, isError, data, error } = GetBlogs();
+  const { isLoading, data, error } = GetBlogs();
 
+  //to ensure 3 blogs get shown
+  const [blogCount, setBlogCount] = useState(2);
+
+  //Blog display
   const BlogCard = ({ blog, index }) => {
     const [display, setDisplay] = useState(false);
-    if (blog.featured) {
-      // do something with featured blog
+    //return nothing and show another blog if its hidden
+    if (blog.hide) {
+      setBlogCount(blogCount + 1);
+      return null;
     }
-    if (blog.hide) return null;
-
+    if (index > blogCount) return null;
     return (
       <a
         href={`https://www.king-of.tech/blog/${blog.slug}`}
@@ -28,6 +33,7 @@ const Blog = () => {
           borderRadius="5px"
           w="340px"
           h="260px"
+          m="15px"
           bg="black"
           cursor="pointer"
           key={index}
@@ -66,11 +72,13 @@ const Blog = () => {
       </a>
     );
   };
+
   if (error) return <h1>Whoops something went wrong.</h1>;
+
   return (
     <VStack maxW="1200px" mx="auto" my="200px" textAlign="center" spacing={10}>
       <h2>My Blog</h2>
-      <Flex direction={{ base: "column", md: "row" }} spacing={4}>
+      <Flex direction={{ base: "column", md: "row" }} s>
         {isLoading
           ? "Loading"
           : data.map((blog, index) => <BlogCard blog={blog} key={index} />)}
@@ -79,6 +87,7 @@ const Blog = () => {
   );
 };
 
+// fetch query
 const API = axios.create({
   baseURL: "https://king-of-tech.herokuapp.com/api",
 });
