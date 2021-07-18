@@ -78,7 +78,7 @@ const Blog = () => {
   return (
     <VStack maxW="1200px" mx="auto" my="200px" textAlign="center" spacing={10}>
       <h2>My Blog</h2>
-      <Flex direction={{ base: "column", md: "row" }} s>
+      <Flex direction={{ base: "column", md: "row" }}>
         {isLoading
           ? "Loading"
           : data.map((blog, index) => <BlogCard blog={blog} key={index} />)}

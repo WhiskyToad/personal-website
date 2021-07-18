@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 import {
   Flex,
-  Box,
   Image,
   Text,
   Link,
@@ -26,9 +26,56 @@ const Projects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
 
+  const MotionHStack = motion(HStack);
+
   const handleClick = (project) => {
     setChoice(project);
     onOpen();
+  };
+
+  //display for projects
+  const ProjectCard = ({ project }) => {
+    const [display, setDisplay] = useState(false);
+    return (
+      <MotionHStack
+        position="relative"
+        overflow="hidden"
+        borderRadius="5px"
+        w="340px"
+        h="260px"
+        m="15px"
+        bg="black"
+        cursor="pointer"
+        ref={btnRef}
+        onClick={() => handleClick(project)}
+        onMouseEnter={() => setDisplay(true)}
+        onMouseLeave={() => setDisplay(false)}
+        whileHover={{ scale: 1.15, zIndex: "9999" }}
+      >
+        <Image
+          w="100%"
+          h="100%"
+          objectFit="cover"
+          position="absolute"
+          top="0"
+          left="0"
+          opacity={display ? "0.25" : "0.6"}
+          src={project.image}
+          alt={project.title}
+        />
+        <VStack w="100%" textAlign="center" zIndex="9" p="10px" color="white">
+          {display ? (
+            <>
+              <Text textStyle="excerpt" m="10px">
+                {project.excerpt}
+              </Text>
+            </>
+          ) : (
+            <h5>{project.title}</h5>
+          )}
+        </VStack>
+      </MotionHStack>
+    );
   };
 
   return (
@@ -41,24 +88,9 @@ const Projects = () => {
         spacing={10}
       >
         <h2>My Recent Projects</h2>
-        <Flex direction={{ base: "column", md: "row" }} spacing={4}>
+        <Flex direction={{ base: "column", md: "row" }}>
           {projects.map((project, index) => (
-            <Box
-              m="10px"
-              cursor="pointer"
-              borderRadius="10px"
-              overflow="hidden"
-              key={index}
-              ref={btnRef}
-              onClick={() => handleClick(project)}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                h="280px"
-                w="400px"
-              />
-            </Box>
+            <ProjectCard project={project} key={index} />
           ))}
         </Flex>
       </VStack>
