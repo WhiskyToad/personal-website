@@ -60,7 +60,7 @@ const Projects = () => {
           top="0"
           left="0"
           opacity={display ? "0.25" : "0.6"}
-          src={project.image}
+          src={project.thumbnail}
           alt={project.title}
         />
         <VStack w="100%" textAlign="center" zIndex="9" p="10px" color="white">
@@ -105,7 +105,7 @@ const Projects = () => {
         <DrawerOverlay zIndex="99999">
           <DrawerContent textAlign="center">
             <Image
-              src={choice.image}
+              src={choice.mockDisplay}
               alt={choice.title}
               borderBottom="1px solid teal"
             />
