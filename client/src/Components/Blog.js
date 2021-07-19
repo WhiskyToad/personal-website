@@ -3,7 +3,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 
 import { motion } from "framer-motion";
-import { HStack, VStack, Flex, Image, Text } from "@chakra-ui/react";
+import { Button, HStack, VStack, Flex, Image, Text } from "@chakra-ui/react";
 
 const Blog = () => {
   const MotionHStack = motion(HStack);
@@ -78,7 +78,20 @@ const Blog = () => {
   return (
     <VStack maxW="1200px" mx="auto" my="200px" textAlign="center" spacing={10}>
       <h2>My Blog</h2>
-      <Flex direction={{ base: "column", md: "row" }}>
+      <Text maxW="700px">
+        Follow my journey as I transition from nothing into a programming
+        career.
+      </Text>
+      <a
+        href="https://www.king-of.tech/blog/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button textStyle="links" p="15px">
+          Take me there!
+        </Button>
+      </a>
+      <Flex direction={{ base: "column", lg: "row" }}>
         {isLoading
           ? "Loading"
           : data.map((blog, index) => <BlogCard blog={blog} key={index} />)}

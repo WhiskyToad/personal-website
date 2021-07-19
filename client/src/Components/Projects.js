@@ -88,7 +88,7 @@ const Projects = () => {
         spacing={10}
       >
         <h2>My Recent Projects</h2>
-        <Flex direction={{ base: "column", md: "row" }}>
+        <Flex direction={{ base: "column", lg: "row" }}>
           {projects.map((project, index) => (
             <ProjectCard project={project} key={index} />
           ))}
@@ -117,12 +117,7 @@ const Projects = () => {
               <VStack h="100%">
                 <Text>{choice.description}</Text>
                 <Spacer />
-                <HStack
-                  fontFamily="BebasNeue"
-                  fontSize="2rem"
-                  w="30%"
-                  justify="space-evenly"
-                >
+                <HStack textStyle="links" w="30%" justify="space-evenly">
                   <Link
                     href={choice.code}
                     target="_blank"

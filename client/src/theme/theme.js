@@ -11,7 +11,7 @@ const theme = extendTheme({
     global: {
       body: {
         fontFamily: "Source Sans Pro",
-        fontSize: ["16px", "16px", "18px", "20px"],
+        fontSize: ["16px", "16px", "18px", "18px"],
         fontWeight: "800",
         lineHeight: "1.64",
         bg: "white",
@@ -64,6 +64,11 @@ const theme = extendTheme({
     icon: {
       fontSize: ["40px", "40px", "50px", "60px"],
       color: "purple",
+    },
+    links: {
+      fontFamily: "Aldrich",
+      fontWeight: "bold",
+      fontSize: { base: "18px", md: "20px" },
     },
   },
 });

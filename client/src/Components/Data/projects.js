@@ -12,10 +12,8 @@ export const projects = [
     mockDisplay: brewersMock,
     excerpt: "A recipe logging and sharing site built on the MERN stack.",
     description: `I dabble in home-brewing beer and I wanted to create a place where people could share 
-    recipes and keep brewing notes, so in comes brewers diary! It is built on React + Node, using axios 
-    for API calls and redux to manage data. Current features are full CRUD functionality and an auth system 
-    with Google sign in. I learned a TON from this, far too much to possibly list but I could go days without any real 
-    progress from all the research I was having to put in.`,
+    recipes and keep brewing notes, so in comes brewers diary! It is built on React + Node and currently features CRUD operations 
+    and user accounts with Google sign in.`,
     code: "https://github.com/WhiskyToad/brewers-diary",
     preview: "https://www.brewersdiary.com/recipes",
   },
