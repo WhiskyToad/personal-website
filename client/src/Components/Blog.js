@@ -50,6 +50,7 @@ const Blog = () => {
             top="0"
             left="0"
             opacity={display ? "0.25" : "0.6"}
+            alt={''}
           />
           <VStack
             w="100%"
@@ -65,7 +66,7 @@ const Blog = () => {
                 </Text>
               </>
             ) : (
-              <h5>{blog.title}</h5>
+              <h3>{blog.title}</h3>
             )}
           </VStack>
         </MotionHStack>

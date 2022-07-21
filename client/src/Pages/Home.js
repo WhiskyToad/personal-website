@@ -12,7 +12,7 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
-    <>
+    <div role='main'>
       <Landing />
       <Box bg="white" zIndex="-999">
         <About />
@@ -22,7 +22,7 @@ const Home = () => {
         <Blog />
         <Footer />
       </Box>
-    </>
+    </div>
   );
 };
 

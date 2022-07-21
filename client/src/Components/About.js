@@ -47,6 +47,7 @@ const Links = () => {
             href="https://www.linkedin.com/in/steven-craig-082717203/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label='Linked In'
           >
             <AiFillLinkedin alt="linked in" />
           </a>
@@ -56,12 +57,13 @@ const Links = () => {
             href="https://github.com/WhiskyToad"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label='github'
           >
             <AiFillGithub alt="github" />
           </a>
         </Tooltip>
         <Tooltip hasArrow label="Email me" bg="black">
-          <a href="mailto:stevencraig321@gmail.com">
+          <a href="mailto:stevencraig321@gmail.com" aria-label='email'>
             <AiOutlineMail alt="email" />
           </a>
         </Tooltip>

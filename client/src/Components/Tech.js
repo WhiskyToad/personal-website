@@ -47,7 +47,7 @@ const Tech = () => {
             <Box textStyle="icon">
               <RiComputerLine alt="front end" />
             </Box>
-            <h4>Front-End</h4>
+            <h3>Front-End</h3>
             <List>
               <ListItem>React</ListItem>
               <ListItem>JavaScript</ListItem>
@@ -68,7 +68,7 @@ const Tech = () => {
             <Box textStyle="icon">
               <IoServerOutline alt="back end" />
             </Box>
-            <h4>Back-End</h4>
+            <h3>Back-End</h3>
             <List>
               <ListItem>NodeJS</ListItem>
               <ListItem>Express</ListItem>
@@ -79,7 +79,7 @@ const Tech = () => {
             <Box textStyle="icon">
               <GiPerspectiveDiceSixFacesRandom alt="others" />
             </Box>
-            <h4>Others</h4>
+            <h3>Others</h3>
             <List>
               <ListItem>Redux</ListItem>
               <ListItem>GraphQL</ListItem>

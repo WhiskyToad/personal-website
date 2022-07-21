@@ -31,7 +31,7 @@ const Skills = () => {
             zIndex="99"
           >
             <Box textStyle="icon">
-              <IoRocketOutline alt="rocket" />
+              <IoRocketOutline alt="" />
             </Box>
             <h4>Speed</h4>
             <Text>
@@ -51,7 +51,7 @@ const Skills = () => {
             zIndex="99"
           >
             <Box textStyle="icon">
-              <FaMobileAlt alt="picture" />
+              <FaMobileAlt alt="" />
             </Box>
             <h4>Responsive</h4>
             <Text>
@@ -71,12 +71,11 @@ const Skills = () => {
             zIndex="99"
           >
             <Box textStyle="icon">
-              <HiOutlineRefresh alt="dynamic" />
+              <HiOutlineRefresh alt="" />
             </Box>
-            <h4>Dynamic</h4>
+            <h4>Accessible</h4>
             <Text>
-              Never one to shy away from a challenge I'll learn whatever is
-              necessary to provide the best projects and experience I can.
+              The web should be for everyone and I am passionate about about creating high standard accessible websites.
             </Text>
           </VStack>
         </Flex>

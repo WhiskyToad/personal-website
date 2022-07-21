@@ -71,7 +71,7 @@ const Projects = () => {
               </Text>
             </>
           ) : (
-            <h5>{project.title}</h5>
+            <h3>{project.title}</h3>
           )}
         </VStack>
       </MotionHStack>
