@@ -9,7 +9,7 @@ import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 
 const Tech = () => {
   return (
-    <>
+    <div className="techContainer">
       <VStack
         bg="purple"
         color="white"
@@ -83,12 +83,14 @@ const Tech = () => {
             <List>
               <ListItem>Redux</ListItem>
               <ListItem>GraphQL</ListItem>
+              <ListItem>Cypress</ListItem>
+              <ListItem>Accessibility</ListItem>
               <ListItem>REST API</ListItem>
             </List>
           </VStack>
         </Flex>
       </FadeInWhenVisible>
-    </>
+    </div>
   );
 };
 

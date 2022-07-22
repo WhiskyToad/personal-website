@@ -27,7 +27,7 @@ const theme = extendTheme({
       },
       h3: {
         fontFamily: "Montserrat",
-        fontSize: ["20px", "26px", "38px", "38px"],
+        fontSize: "20px",
       },
       h4: {
         fontFamily: "Montserrat",
