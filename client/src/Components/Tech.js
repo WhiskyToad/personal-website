@@ -50,10 +50,10 @@ const Tech = () => {
             <h3 tabIndex={0}>Front-End</h3>
             <List tabIndex={0}>
               <ListItem>React</ListItem>
-              <ListItem>JavaScript</ListItem>
+              <ListItem>TypeScript</ListItem>
               <ListItem>HTML</ListItem>
               <ListItem>CSS</ListItem>
-              <ListItem>Chakra UI</ListItem>
+              <ListItem>Chakra UI / MUI</ListItem>
             </List>
           </VStack>
 
@@ -73,6 +73,7 @@ const Tech = () => {
               <ListItem>NodeJS</ListItem>
               <ListItem>Express</ListItem>
               <ListItem>NoSQL</ListItem>
+              <ListItem>Python / Django</ListItem>
             </List>
           </VStack>
           <VStack w="220px" spacing={6} p="40px 20px">
