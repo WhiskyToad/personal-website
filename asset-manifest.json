@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.js": "/personal-website/static/js/main.68a3de18.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.68a3de18.chunk.js.map",
-    "runtime-main.js": "/personal-website/static/js/runtime-main.8716f452.js",
-    "runtime-main.js.map": "/personal-website/static/js/runtime-main.8716f452.js.map",
-    "static/js/2.0ac4c0c0.chunk.js": "/personal-website/static/js/2.0ac4c0c0.chunk.js",
-    "static/js/2.0ac4c0c0.chunk.js.map": "/personal-website/static/js/2.0ac4c0c0.chunk.js.map",
-    "index.html": "/personal-website/index.html",
-    "static/js/2.0ac4c0c0.chunk.js.LICENSE.txt": "/personal-website/static/js/2.0ac4c0c0.chunk.js.LICENSE.txt",
-    "static/media/BrewersDiary.8c2144d2.png": "/personal-website/static/media/BrewersDiary.8c2144d2.png",
-    "static/media/calculator.6021e0d6.png": "/personal-website/static/media/calculator.6021e0d6.png",
-    "static/media/kinlochleven1.4cd27a2f.jpg": "/personal-website/static/media/kinlochleven1.4cd27a2f.jpg",
-    "static/media/lartsy.87a2ff4e.png": "/personal-website/static/media/lartsy.87a2ff4e.png",
-    "static/media/memory.fa548dce.png": "/personal-website/static/media/memory.fa548dce.png",
-    "static/media/profilephoto.d80cae05.jpeg": "/personal-website/static/media/profilephoto.d80cae05.jpeg",
-    "static/media/toadoo.0703445e.png": "/personal-website/static/media/toadoo.0703445e.png"
+    "main.css": "/static/css/main.53f46cc7.chunk.css",
+    "main.js": "/static/js/main.730cdbde.chunk.js",
+    "main.js.map": "/static/js/main.730cdbde.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.900dd88b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.900dd88b.js.map",
+    "static/js/2.c17aa8e5.chunk.js": "/static/js/2.c17aa8e5.chunk.js",
+    "static/js/2.c17aa8e5.chunk.js.map": "/static/js/2.c17aa8e5.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.53f46cc7.chunk.css.map": "/static/css/main.53f46cc7.chunk.css.map",
+    "static/js/2.c17aa8e5.chunk.js.LICENSE.txt": "/static/js/2.c17aa8e5.chunk.js.LICENSE.txt",
+    "static/media/brewersDiary.cc27dc9c.jpg": "/static/media/brewersDiary.cc27dc9c.jpg",
+    "static/media/brewersMock.12d974a5.jpg": "/static/media/brewersMock.12d974a5.jpg",
+    "static/media/giphy.de2d55c2.jpg": "/static/media/giphy.de2d55c2.jpg",
+    "static/media/giphyMock.1d17b6dd.jpg": "/static/media/giphyMock.1d17b6dd.jpg",
+    "static/media/kingMock.cf79a676.jpg": "/static/media/kingMock.cf79a676.jpg",
+    "static/media/kingOfTech.c7213099.jpg": "/static/media/kingOfTech.c7213099.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8716f452.js",
-    "static/js/2.0ac4c0c0.chunk.js",
-    "static/js/main.68a3de18.chunk.js"
+    "static/js/runtime-main.900dd88b.js",
+    "static/js/2.c17aa8e5.chunk.js",
+    "static/css/main.53f46cc7.chunk.css",
+    "static/js/main.730cdbde.chunk.js"
   ]
 }
