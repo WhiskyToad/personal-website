@@ -23,7 +23,7 @@ const Blog = () => {
     if (index > blogCount) return null;
     return (
       <a
-        href={`https://www.king-of.tech/blog/${blog.slug}`}
+        href={`https://cocky-lamarr-75c5d6.netlify.app/blog/${blog.slug}`}
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel={blog.title}
@@ -86,7 +86,7 @@ const Blog = () => {
         career.
       </Text>
       <a
-        href="https://www.king-of.tech/blog/"
+        href="https://cocky-lamarr-75c5d6.netlify.app/blog"
         target="_blank"
         rel="noopener noreferrer"
       >

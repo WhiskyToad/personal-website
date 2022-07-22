@@ -37,6 +37,6 @@ export const projects = [
     learning basic Python I decided to go back since I knew Django was great for things like blogs. I kept this really clean and simple 
     and it is probably my favorite design so far.`,
     code: "https://github.com/WhiskyToad/blog",
-    preview: "https://king-of.tech/blog",
+    preview: "https://cocky-lamarr-75c5d6.netlify.app/blog",
   },
 ];
