@@ -1,14 +1,14 @@
 # <p align="center">**My Personal Site** </p>
 
 <div align="center"> 
-  <a href='https://www.whiskytoad.com'>Live Version Here</a>
+  <a href='https://whiskytoad.github.io/personal-website/'>Live Version Here</a>
   <br>
   <br>
 </div>
 
 # <p align="center">Introduction </p>
 
-Seems like an essential to have a personal site when seeking employment, especially if it is your first role as you need something to showcase you are not just bluffing your CV. It has been through a few alterations but I've tried to keep it clean and simple and not overdo it and try to show off.
+Doing what I do, creating a site for a resume instead of a boring piece of paper.
 
 <br>
 
