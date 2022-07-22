@@ -33,8 +33,8 @@ const Skills = () => {
             <Box textStyle="icon">
               <IoRocketOutline alt="" />
             </Box>
-            <h4>Speed</h4>
-            <Text>
+            <h4 tabIndex={0}>Speed</h4>
+            <Text tabIndex={0}>
               A racer by heart my sites are no exception, I am always striving
               and researching on how to make them as fast as possible.
             </Text>
@@ -53,8 +53,8 @@ const Skills = () => {
             <Box textStyle="icon">
               <FaMobileAlt alt="" />
             </Box>
-            <h4>Responsive</h4>
-            <Text>
+            <h4 tabIndex={0}>Responsive</h4>
+            <Text tabIndex={0}>
               The modern web is nothing without mobile compatibility, for that
               reason all my sites are designed from the ground up to be
               responsive and user friendly across all platforms.
@@ -73,8 +73,8 @@ const Skills = () => {
             <Box textStyle="icon">
               <HiOutlineRefresh alt="" />
             </Box>
-            <h4>Accessible</h4>
-            <Text>
+            <h4 tabIndex={0}>Accessible</h4>
+            <Text tabIndex={0}>
               The web should be for everyone and I am passionate about about creating high standard accessible websites.
             </Text>
           </VStack>

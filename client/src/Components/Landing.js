@@ -38,7 +38,7 @@ const Landing = () => {
         </div>
 
         <div className="page-wrapper">
-          <VStack h="100vh" justify="center" align="center" color="white">
+          <VStack h="100vh" justify="center" align="center" color="white" tabIndex={0}>
             <motion.div variants={variants} initial="left" animate="leftEnd">
               <HStack>
                 <h2>Hello there, I'm </h2>

@@ -20,8 +20,8 @@ const Tech = () => {
         textAlign="center"
         spacing={12}
       >
-        <h2>My Tech Stack</h2>
-        <Text maxW="700px">
+        <h2 tabIndex={0}>My Tech Stack</h2>
+        <Text maxW="700px" tabIndex={0}>
           This is the tech I currently have a firm understanding of. I am
           constantly building projects and expanding my knowledge.
         </Text>
@@ -45,10 +45,10 @@ const Tech = () => {
         >
           <VStack w="220px" spacing={6} p="40px 20px">
             <Box textStyle="icon">
-              <RiComputerLine alt="front end" />
+              <RiComputerLine alt="" />
             </Box>
-            <h3>Front-End</h3>
-            <List>
+            <h3 tabIndex={0}>Front-End</h3>
+            <List tabIndex={0}>
               <ListItem>React</ListItem>
               <ListItem>JavaScript</ListItem>
               <ListItem>HTML</ListItem>
@@ -66,10 +66,10 @@ const Tech = () => {
             borderLeft=" 1px solid #E6ECF8"
           >
             <Box textStyle="icon">
-              <IoServerOutline alt="back end" />
+              <IoServerOutline alt="" />
             </Box>
-            <h3>Back-End</h3>
-            <List>
+            <h3 tabIndex={0}>Back-End</h3>
+            <List tabIndex={0}>
               <ListItem>NodeJS</ListItem>
               <ListItem>Express</ListItem>
               <ListItem>NoSQL</ListItem>
@@ -77,10 +77,10 @@ const Tech = () => {
           </VStack>
           <VStack w="220px" spacing={6} p="40px 20px">
             <Box textStyle="icon">
-              <GiPerspectiveDiceSixFacesRandom alt="others" />
+              <GiPerspectiveDiceSixFacesRandom alt="" />
             </Box>
-            <h3>Others</h3>
-            <List>
+            <h3 tabIndex={0}>Others</h3>
+            <List tabIndex={0}>
               <ListItem>Redux</ListItem>
               <ListItem>GraphQL</ListItem>
               <ListItem>Cypress</ListItem>

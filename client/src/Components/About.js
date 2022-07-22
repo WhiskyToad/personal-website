@@ -16,9 +16,9 @@ const About = () => {
           textAlign="center"
           spacing={12}
         >
-          <GiFrogPrince fontSize="60px" alt="toad" />
-          <h3>About</h3>
-          <Text>
+          <GiFrogPrince fontSize="60px" alt="" />
+          <h3 tabIndex={0}>About</h3>
+          <Text tabIndex={0}>
             I am a full-stack developer with a focus on React and Node. Process
             orientated and goal driven, I know the end result and I focus on the
             steps to get there. Always striving to be better and learn new
@@ -49,7 +49,7 @@ const Links = () => {
             rel="noopener noreferrer"
             aria-label='Linked In'
           >
-            <AiFillLinkedin alt="linked in" />
+            <AiFillLinkedin alt="" />
           </a>
         </Tooltip>
         <Tooltip hasArrow label="Github link" bg="black">
@@ -59,12 +59,12 @@ const Links = () => {
             rel="noopener noreferrer"
             aria-label='github'
           >
-            <AiFillGithub alt="github" />
+            <AiFillGithub alt="" />
           </a>
         </Tooltip>
         <Tooltip hasArrow label="Email me" bg="black">
           <a href="mailto:stevencraig321@gmail.com" aria-label='email'>
-            <AiOutlineMail alt="email" />
+            <AiOutlineMail alt="" />
           </a>
         </Tooltip>
       </HStack>

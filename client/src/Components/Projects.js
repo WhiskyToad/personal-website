@@ -61,7 +61,8 @@ const Projects = () => {
           left="0"
           opacity={display ? "0.25" : "0.6"}
           src={project.thumbnail}
-          alt={project.title}
+          alt={`${project.title}: ${project.excerpt}`}
+          tabIndex={0}
         />
         <VStack w="100%" textAlign="center" zIndex="9" p="10px" color="white">
           {display ? (
@@ -87,7 +88,7 @@ const Projects = () => {
         textAlign="center"
         spacing={10}
       >
-        <h2>My Recent Projects</h2>
+        <h2 tabIndex={0}>My Recent Projects</h2>
         <Flex direction={{ base: "column", lg: "row" }}>
           {projects.map((project, index) => (
             <ProjectCard project={project} key={index} />

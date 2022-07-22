@@ -26,6 +26,8 @@ const Blog = () => {
         href={`https://www.king-of.tech/blog/${blog.slug}`}
         target="_blank"
         rel="noopener noreferrer"
+        ariaLabel={blog.title}
+        tabIndex={0}
       >
         <MotionHStack
           position="relative"
@@ -78,8 +80,8 @@ const Blog = () => {
 
   return (
     <VStack maxW="1200px" mx="auto" my="200px" textAlign="center" spacing={10}>
-      <h2>My Blog</h2>
-      <Text maxW="700px">
+      <h2 tabIndex={0}>My Blog</h2>
+      <Text maxW="700px" tabIndex={0}>
         Follow my journey as I transition from nothing into a programming
         career.
       </Text>
